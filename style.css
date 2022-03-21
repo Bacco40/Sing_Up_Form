@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;400&display=swap');
+
+@font-face {
+    font-family: my-font;
+    src: url(./SmoochSans-VariableFont_wght.ttf);
+  }
+
+body,html,:root{
+    margin: 0;
+    height:100% ;
+    font-family:my-font,'Smooch Sans', sans-serif;
+    color: rgb(32, 31, 31);
+}
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    min-height: 100% ;
+}
+.logoOverImg{
+    position: relative;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    height:20vh ;
+    width:100%;
+}
+.photoDetail{
+    width:95%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color:antiquewhite;
+    text-align: end;
+    font-size: clamp(15px,2vw,2rem);
+}
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    flex: 1 0 40%;
+    background-image: url(./star.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width:100vw;
+    min-height: min(40vh,120vh);
+}
+.formContainer {
+    flex: 1 0 55%;
+    min-height: 100%;
+    background-color: rgb(247, 244, 240);
+}
+.header, .bottomForm, form{
+    padding: 20px;
+}
+form{
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 5px 5px 5px rgb(126, 123, 123);
+}
+.formTitle{
+    width:100%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.formPart{
+    flex: 1 0 40%;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: clamp(40px,6vw,5rem);
+    padding-left: 20px;
+}
+h1{
+    font-size: clamp(50px,7vw,4rem);
+    font-weight: 400;
+    color: antiquewhite;
+    min-width: 220px;
+}
+.header{
+    font-weight: 600;
+    font-size: min(30px,2rem)
+}
+.title{
+    padding-bottom: 5vh;
+}
+p{
+    margin: 0;
+}
+button{
+    border: 0;
+    padding: 2vh 5vw;
+    background-color: rgb(196, 115, 148);
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+label{
+    font-size: 3vh;
+    font-weight: 500;
+}
+button:hover{
+    background-color:rgb(206, 91, 137) ;
+}
+.bottomForm{
+    font-size: 4vh;
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+a[href="./index.html"]{
+    color:rgb(196, 115, 148);
+    text-decoration: none;
+    font-weight: 500;
+}
+a[href="./index.html"]:hover{
+    color:rgb(206, 91, 137) ;
+}
+input{
+    font-family: my-font;
+    font-size: 18px;
+}
+input:focus{
+    box-shadow: 5px 5px 5px rgb(126, 123, 123);
+    margin-top: 2px;
+    border: none;
+}
